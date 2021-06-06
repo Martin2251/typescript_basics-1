@@ -10,12 +10,12 @@ console.log(sum(3, 5))
 
 interface IPerson{
     firstName: string
-    lastName: string
+    lastName?: string
     age: number
     height?: number
     weight?: number
 }
-
+// put ? if unsure it will be there
 function sayHi(person:IPerson){
     console.log(`Hi there, my name is ${person.firstName} and I am ${person.age} years old!`)
 }
